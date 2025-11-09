@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      透過實際操作助教提供的Colab程式碼，我更清楚了解了整個模型訓練的完整流程。在不斷嘗試與修改的過程中，我學會如何調整各種超參數以提升模型的表現，雖然在使用Colab的過程中偶爾會遇到一些操作上的不便與限制，但當最終模型成功訓練並得到結果時，仍感到十分有成就感。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成 baseline Colab 訓練得到訓練分數及訓練權重</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 調整訓練筆數、Epochs 或其他參數得到比 Simple baseline 更高的分數</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 使用不同版本、大小模型進行訓練並繳交 Colab</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,9 +196,34 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <p>Simple Baseline mAP50 分數圖片</p>
+              <img src="simple.png" width="100%" height="100%">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Medium Baseline mAP50 分數圖片 模型改用yolo12s 其他不變</p>
+              <img src="simple.png" width="100%" height="100%">
+            </td>
+          </tr>
+          <tr>
+            <td> Strong Baseline <br>
+              Colab連結: 
+              <a href="https://colab.research.google.com/drive/1HBNEEzPxCYnIbrKNu1QPT34QrL0oNN64?usp=sharing">
+              https://colab.research.google.com/drive/1HBNEEzPxCYnIbrKNu1QPT34QrL0oNN64?usp=sharing
+              </a> <br>
+              使用YOLOv12s
+              <img src="strong_1.png" width="100%" height="auto">
+              <!-- 使用YOLOv9t
+              <img src="v9t.png" width="100%" height="auto"> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
